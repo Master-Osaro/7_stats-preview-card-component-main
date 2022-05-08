@@ -25,13 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 
 
 ### Links
 
-- Live Site URL: [Pricing Component](https://peppy-bubblegum-f87f78.netlify.app)
+- Live Site URL: [Live Demo](https://stats-preview-card-o.netlify.app/)
 
 ## My process
 
