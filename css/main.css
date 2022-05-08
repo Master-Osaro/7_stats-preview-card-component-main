@@ -1,0 +1,158 @@
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --soft-violet-transparent: hsla(277, 64%, 61%, 0.6);
+    --white: hsla(0, 0%, 100%);
+    --transparent-white-1: hsla(0, 0%, 100%, 0.75);
+    --transparent-white-2: rgba(255, 255, 255, 0.6);
+    --body-font: "Inter", sans-serif;
+    --header-font: "Lexend Deca", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--header-font);
+    font-weight: 400;
+    padding: 6rem;
+    background-color: var(--very-dark-blue);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-desaturated-blue);
+    border-radius: 8px;
+    max-width: 1100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.stats-copy {
+    padding: 3rem;
+    flex: 2;
+}
+
+.stats-copy__heading {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+}
+
+.stats-copy__heading span {
+    color: var(--soft-violet);
+}
+
+.stats-copy__text {
+    font-family: var(--body-font);
+    margin-bottom: 3rem;
+    color: var(--transparent-white-1);
+}
+
+.stats {
+    padding: 0 5rem 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stat__heading {
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat__text {
+    font-family: var(--body-font);
+    color: var(--transparent-white-2);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.image__container{
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+
+
+.image__overlay{
+    position: absolute;
+    width: 100%;
+    height:  100%;
+    top: 0;
+    left: 0;
+    background-color: var(--soft-violet-transparent);
+}
+
+
+/*===== Small Desktops =====*/
+@media screen and (max-width: 1150px) {
+    body {
+        padding: 3rem;
+    }
+
+    .stat {
+        margin-right: 0.5rem;
+    }
+}
+
+/*===== Tablets =====*/
+@media screen and (max-width: 992px) {
+
+    main {
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        max-width: 576px;
+    }
+
+    .stats {
+        padding: 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stat {
+        margin: 0 0 1.5rem 0;
+    }
+
+    .image {
+        width: 100%;
+        
+    }
+
+
+
+}
+
+/*===== Mobile =====*/
+@media screen and (max-width: 674px) {
+
+    .image {
+        margin-top: 0;
+    }
+
+    .stats-copy__heading {
+        font-size: 1.5rem;
+    }
+    
+    
+    .stats-copy__text {
+        font-size: 0.9rem;
+    }
+
+
+}
