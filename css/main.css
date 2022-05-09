@@ -19,8 +19,11 @@
 body {
     font-family: var(--header-font);
     font-weight: 400;
-    padding: 6rem;
     background-color: var(--very-dark-blue);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 main {
